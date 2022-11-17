@@ -55,6 +55,7 @@ function App() {
           <Projects projects={projects} />
         </div>
       </div>
+      <p className="developer">DEVELOPER</p>
       <Global />
     </Container>
   );

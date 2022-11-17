@@ -7,6 +7,7 @@ import { Container } from "./styles";
 const Person = () => {
   return (
     <Container>
+      <p>Jonathan</p>
       <img src={PersonImage} alt="Person" />
     </Container>
   );
