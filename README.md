@@ -1,3 +1,11 @@
+# Portfolio Template
+
+This is a basic example for portfolio.
+
+## Screenshots
+
+![App Screenshot](./screen.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
