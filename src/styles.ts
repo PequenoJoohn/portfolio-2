@@ -1,49 +1,50 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: calc(100vh - 96px);
-    position: relative;
+  position: relative;
 
-    .developer {
-        font-size: 200px;
-        font-weight: bold;
-        color: #BA2842;
-        opacity: 0.3;
-        text-align: center;
-        margin: 0 auto;
-        width: 100%;
-        display: none;
+  .role {
+    font-size: 200px;
+    font-weight: bold;
+    color: #ba2842;
+    opacity: 0.3;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: none;
+    cursor: crosshair;
+    text-transform: uppercase;
+  }
+
+  .whyme {
+    display: initial;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .role {
+      font-size: 180px;
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    .role {
+      font-size: 160px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .role {
+      display: block;
     }
 
     .whyme {
-        display: initial;
-    }
+      display: flex;
+      justify-content: center;
 
-    @media screen and (max-width: 1200px) {
-          .developer {
-            font-size: 180px;
-        }
+      .slick-slider {
+        width: 100%;
+        max-width: 500px;
+      }
     }
-
-    @media screen and (max-width: 1070px) {
-          .developer {
-            font-size: 160px;
-        }
-    }
-    
-    @media screen and (min-width: 990px) {
-        .developer {
-            display: block;
-        }
-
-        .whyme {
-            display: flex;
-            justify-content: center;
-
-            .slick-slider {
-                width: 100%;
-                max-width: 500px;
-            }           
-        }
-    }
+  }
 `;

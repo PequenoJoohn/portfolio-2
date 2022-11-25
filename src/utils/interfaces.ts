@@ -9,6 +9,10 @@ export interface ProjectProps {
 }
 
 export interface IProject {
-  nome: string;
+  name: string;
   image: string;
+}
+
+export interface IPerson {
+  name: string;
 }

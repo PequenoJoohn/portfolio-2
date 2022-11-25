@@ -10,11 +10,13 @@ import Global from "./styles/Global";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const user = {
-    name: "Jonathan.",
-    github: "https://github.com/PequenoJoohn",
-    linkedin: "https://www.linkedin.com/in/jonathanlm/",
-    discord: "https://discord.gg/bZdNzScxMz",
-    twitter: "https://twitter.com/JoohnMatos",
+    name: "john doe.",
+    firstName: "John",
+    role: "DESIGN",
+    github: "https://www.github.com",
+    linkedin: "https://www.linkedin.com/",
+    discord: "https://discord.gg/",
+    twitter: "https://twitter.com/",
   };
 
   function handleOpenMenu() {
@@ -23,14 +25,12 @@ function App() {
 
   const projects = [
     {
-      nome: "Lab Zone",
-      image:
-        "https://jonathan-matos.netlify.app/static/media/desktop.e216cabf.jpg",
+      name: "Project 1",
+      image: "https://picsum.photos/200/300?random=1",
     },
     {
-      nome: "Ramon Template",
-      image:
-        "https://jonathan-matos.netlify.app/static/media/desktop.e216cabf.jpg",
+      name: "Project 2",
+      image: "https://picsum.photos/200/300?random=2",
     },
   ];
 
@@ -48,14 +48,14 @@ function App() {
       <Main text={user.name} />
       <div className="whyme">
         <div>
-          <Person />
+          <Person name={user.firstName} />
         </div>
         <div>
           <About />
           <Projects projects={projects} />
         </div>
       </div>
-      <p className="developer">DEVELOPER</p>
+      <p className="role">{user.role}</p>
       <Global />
     </Container>
   );

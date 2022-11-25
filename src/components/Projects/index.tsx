@@ -17,9 +17,9 @@ const Projects = ({ projects }: ProjectProps) => {
       <h2>Last Project</h2>
       <Carousel>
         {projects.map((project) => (
-          <div key={project.nome}>
+          <div key={project.name}>
             <a href="">
-              <p>{project.nome}</p>
+              <p>{project.name}</p>
               <img src={project.image} alt="" />
             </a>
           </div>
